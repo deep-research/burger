@@ -1,0 +1,26 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "A full stack application using MySQL, Node, Express, Handlebars and a homemade ORM",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deep-research/burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deep-research/burger/issues"
+  },
+  "homepage": "https://github.com/deep-research/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0"
+  }
+}

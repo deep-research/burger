@@ -1,0 +1,48 @@
+img {
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+img:hover {
+    opacity: .7;
+}
+
+h2 {
+    color: rgb(150, 37, 37);
+}
+
+body {
+    background-color: khaki;
+}
+
+form {
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+#formIncomplete {
+    color: crimson;
+    padding-left: 3px;
+    font-weight: bold;
+}
+
+.freshBurger:hover {
+    background-color: rgba(53, 77, 77, 0.336);
+}
+
+.eatenBurger {
+    background-color: lightyellow
+}
+
+.astext {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+.eatenBurger, .freshBurger {
+    padding: 10px;
+}
