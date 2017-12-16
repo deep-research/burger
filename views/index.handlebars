@@ -8,24 +8,15 @@
     <div class="row justify-content-center">
         <div class="col-4">
             <h4>Ready to  eat</h4>
-            {{!-- <ul>
-                {{#each burgers}}
-                    {{#unless devoured}}
-                    <li>
-                        <button class="astext eatButton" type="button" burgerID={{id}}  title="Click to eat!">{{id}}: {{burger_name}}</button>
-                    </li>
-                    {{/unless}}
-                {{/each}}
-            </ul> --}}
-                {{#each burgers}}
-                    {{#unless devoured}}
-                        <div class="card">
-                            <div burgerID={{id}} class="card-block freshBurger">
-                                {{id}}: {{burger_name}}
-                            </div>
+            {{#each burgers}}
+                {{#unless devoured}}
+                    <div class="card">
+                        <div burgerID={{id}} class="card-block freshBurger">
+                            {{id}}: {{burger_name}}
                         </div>
-                    {{/unless}}
-                {{/each}}
+                    </div>
+                {{/unless}}
+            {{/each}}
         </div>
         <div class="col-4">
             <h4>Already eaten</h4>
