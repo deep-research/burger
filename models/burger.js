@@ -25,6 +25,12 @@ var burger = {
         orm.updateOne(table, "devoured", 1, "id", idNumber, function(res) {
             cb(res);
         });
+    },
+    trash: function(idNumber, cb) {
+        // `1` means that the burger has been eaten
+        orm.deleteOne(table, "id", idNumber, function(res) {
+            cb(res);
+        });
     }
 };
 

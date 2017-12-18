@@ -37,6 +37,14 @@ router.put("/api/burgers/:id", function(req, res) {
     });
 });
 
+// Put request for the API
+router.delete("/api/burgers/:id", function(req, res) {
+    // Delete a specific burger based upon the URL query
+    burger.trash(req.params.id, function(result) {
+        res.end()
+    });
+});
+
 // Send any other url back to the index page
 router.get("/*", function(req, res) {
     res.redirect("/index")

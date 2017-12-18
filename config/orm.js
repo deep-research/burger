@@ -33,6 +33,16 @@ var orm = {
                 cb(result);
         });
     },
+    // Delete statement prototype
+    deleteOne: function(tableName, idColumn, idNumber, cb) {
+        var queryString = "DELETE FROM ?? WHERE ?? = ?";
+        connection.query(queryString, [tableName, idColumn, idNumber], function(err, result) {
+            if (err) {
+                throw err;
+            }
+                cb(result);
+        });
+    }
 };
 
 module.exports = orm;
