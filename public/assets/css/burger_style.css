@@ -8,10 +8,6 @@ img:hover {
     opacity: .7;
 }
 
-h2 {
-    color: rgb(150, 37, 37);
-}
-
 body {
     background-color: khaki;
 }
@@ -32,6 +28,10 @@ form {
     background-color: rgba(53, 77, 77, 0.123);
 }
 
+.freshBurger:active, .eatenBurger:active {
+    background-color: rgb(230, 250, 227);
+}
+
 .eatenBurger {
     background-color: lightyellow
 }
@@ -45,4 +45,9 @@ form {
 
 .eatenBurger, .freshBurger {
     padding: 10px;
+}
+
+#title-link {
+    text-decoration: none;
+    color: rgb(150, 37, 37);
 }
