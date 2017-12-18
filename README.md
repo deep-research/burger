@@ -1,6 +1,10 @@
 # burger
 
-This is a full stack food ordering application with persistant data storage. You can order a burger with a custom name and then eat it when you're ready. The user input is validated, and an error message is displayed if the data is invalid.
+This is a full stack food ordering application with persistant data storage.
+
+* You can order a burger with a custom name and then eat it when you're ready.
+* The user input is validated, and an error message is displayed if the data is invalid.
+* The burgers can also be deleted when you are finished eating.
 
 ### Technologies
 * Node.JS
