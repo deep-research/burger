@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
     // Form validation
     $("form").submit(function() {
         var submissionLimit = 50;
