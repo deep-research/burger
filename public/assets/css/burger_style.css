@@ -24,7 +24,7 @@ form {
     font-weight: bold;
 }
 
-.freshBurger:hover, .eatenBurger:hover {
+.freshBurger:hover, .eatenBurger:hover, #github-card:hover {
     background-color: rgba(53, 77, 77, 0.123);
 }
 
@@ -50,4 +50,30 @@ form {
 #title-link {
     text-decoration: none;
     color: rgb(150, 37, 37);
+}
+
+#github-card {
+    background-color: whitesmoke;
+}
+
+#github-link {
+    text-align: center;
+    text-decoration: none;
+}
+
+label {
+    border: solid rgba(84, 84, 105, 0.548) 1px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(224, 243, 243, 0.562);
+}
+
+#newButton {
+    padding: 12px 50px 12px 50px;
+    background-color: rgb(255, 157, 28);
+    border-color: lightgrey;
+}
+
+#newButton:hover {
+    opacity: .7;
 }

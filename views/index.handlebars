@@ -41,60 +41,24 @@
         <div class="form-group row">
             <p id="formIncomplete"></p>
             <input class="form-control" placeholder="What would you like?" type="text" id="burgerForm" name="burgerName">
+            
         </div>
         <button id="newButton" type="submit" class="btn btn-primary">Submit</button>
         <br><br>
         <label for="burgerForm">Use the form to make an order, <br>and click on a burger to eat it!</label>
     </form>
     <br>
-        
+</div>
+<div class="row float-sm-left">
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+            <a title="See the code!" target="_blank" id="github-link" href="https://github.com/deep-research/burger">
+                <li class="list-group-item" id="github-card">
+                    Github Repository
+                </li>
+            </a>
+        </ul>
     </div>
 </div>
-
-<script type="text/javascript">
-    // Form validation
-    $("form").submit(function() {
-        var submissionLimit = 50;
-        // Prevent submission of empty strings, only spaces and excess length
-        if (($("#burgerForm").val().trim() === "" || $("#burgerForm").val().trim().length > submissionLimit)) {
-            // Clear the form
-            $("#burgerForm").val("")
-
-            // Display an error message
-            $("#formIncomplete").html("Please enter a valid name");
-
-            return false;
-        } else {
-            //Hide the error message
-            $("#formIncomplete").hide()
-        }
-    });
-
-    // AJAX put request to eat a burger
-    $(".freshBurger").click(function() {
-        var burgerID = $(this).attr("burgerID")
-        var queryURL = "/api/burgers/" + burgerID
-        $.ajax({
-            url: queryURL,
-            type: 'PUT',
-            success: function(data) {
-                // Reload the page to display the latest data
-                location.reload();
-            }
-        });
-    });
-
-    // AJAX put request to delete a burger
-    $(".eatenBurger").click(function() {
-        var burgerID = $(this).attr("burgerID")
-        var queryURL = "/api/burgers/" + burgerID
-        $.ajax({
-            url: queryURL,
-            type: 'DELETE',
-            success: function(data) {
-                // Reload the page to display the latest data
-                location.reload();
-            }
-        });
-    });
-</script>
+<br><br>
+<br><br>
